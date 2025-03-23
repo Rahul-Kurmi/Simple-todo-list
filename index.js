@@ -13,8 +13,8 @@ const todos = []; // Array to store TODO items
 // Secret key for JWT
 const JWT_SECRET = "ilove100xdevsliveclassse"; // Define a secret key for signing JWTs
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, "public"))); // Middleware to serve static files from the 'public' folder
+// Serve static files from the 'docs' directory
+app.use(express.static(path.join(__dirname, "docs"))); // Middleware to serve static files from the 'docs' folder
 
 app.post("/signup", (req, res) => {
   const { username, password } = req.body;
